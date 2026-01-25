@@ -1,41 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="let's meditate">
-    <meta name="author" content="soham">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>soham</title>
-<!--    <link rel="icon" href="https://soham.care/assets/images/favicon.ico">-->
+    <title>소함 - 나를 찾는 명상 타이머</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
+        :root { --primary-color: #5d7d64; --bg-color: #fdfcf8; --text-color: #4a4a4a; --card-bg: #ffffff; }
+        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; margin: 0; padding: 0; color: var(--text-color); background-color: var(--bg-color); line-height: 1.6; }
 
-        html,
-        body {
-            height: 100%;
-        }
+        header { padding: 3rem 1rem; text-align: center; background: linear-gradient(180deg, rgba(93,125,100,0.1) 0%, rgba(253,252,248,0) 100%); }
+        h1 { margin: 0; font-size: 2.2rem; color: var(--primary-color); letter-spacing: -0.5px; }
+        .subtitle { font-size: 1.1rem; margin-top: 15px; color: #777; font-weight: 300; }
+
+        .container { max-width: 700px; margin: 0 auto; padding: 20px; text-align: center; }
+
+        .download-btn { display: inline-block; background-color: var(--primary-color); color: white; padding: 14px 35px; text-decoration: none; border-radius: 50px; font-weight: 500; margin-top: 30px; transition: opacity 0.3s; box-shadow: 0 4px 10px rgba(93,125,100,0.3); }
+        .download-btn:hover { opacity: 0.9; }
+
+        .feature-list { margin-top: 50px; text-align: left; }
+        .feature-item { background: var(--card-bg); padding: 25px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); display: flex; align-items: center; }
+        .icon { font-size: 1.8rem; margin-right: 20px; width: 40px; text-align: center; }
+        .text h3 { margin: 0 0 5px 0; font-size: 1.1rem; color: var(--primary-color); }
+        .text p { margin: 0; font-size: 0.95rem; color: #666; }
+
+        footer { margin-top: 60px; padding: 30px; text-align: center; font-size: 0.85rem; color: #999; border-top: 1px solid #eee; }
+        footer a { color: #888; text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: var(--primary-color); }
     </style>
 </head>
 <body>
-<div style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-    <div style="width: 100%;">
-        <div style="flex-direction: column; align-items: center; justify-content: center; padding: 3rem;">
-            <div id="privacy" style="font-size: 1rem;"></div>
+
+<header>
+    <h1>소함 명상</h1>
+    <div class="subtitle">숨을 들이마시고 내쉬며, 지금 이 순간에 머무르세요.</div>
+    <a href="#" class="download-btn">마음 챙김 시작하기</a>
+</header>
+
+<div class="container">
+    <div class="feature-list">
+        <div class="feature-item">
+            <span class="icon">🧘</span>
+            <div class="text">
+                <h3>단순한 명상 타이머</h3>
+                <p>복잡한 설정 없이 원하는 시간을 맞추고 바로 명상을 시작하세요.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="icon">🔔</span>
+            <div class="text">
+                <h3>싱잉볼 알림음</h3>
+                <p>깊은 울림의 종소리가 명상의 시작과 끝, 그리고 중간 점검을 도와줍니다.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="icon">🌙</span>
+            <div class="text">
+                <h3>백그라운드 재생</h3>
+                <p>화면을 끄고 편안하게 눈을 감으세요. 알림은 멈추지 않습니다.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="icon">📅</span>
+            <div class="text">
+                <h3>명상 기록 캘린더</h3>
+                <p>매일 쌓여가는 마음 챙김의 시간을 달력에서 확인하세요.</p>
+            </div>
         </div>
     </div>
-    <div style="font-size: 1rem; padding-bottom: 2rem;">
-        Copyright 2023. soham all rights reserved.
-    </div>
 </div>
-<script>
-    const text = `
-        소함 메인 페이지
-    `;
-    const privacy = document.getElementById("privacy");
-    privacy.innerText = text;
-</script>
+
+<footer>
+    <p>&copy; 2026 Soham. All rights reserved.</p>
+    <p>
+        <a href="privacy_soham.html">개인정보처리방침</a> |
+        <a href="mailto:shootthemood919@gmail.com">문의하기</a>
+    </p>
+</footer>
+
 </body>
 </html>
