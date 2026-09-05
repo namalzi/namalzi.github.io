@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바둑 한 수 - 개인정보처리방침</title>
+    <style>
+        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
+        h1 { border-bottom: 2px solid #c9a227; padding-bottom: 10px; color: #1f2a24; }
+        h2 { margin-top: 30px; color: #1f2a24; font-size: 1.2em; border-left: 4px solid #c9a227; padding-left: 10px; }
+        p { margin-bottom: 10px; }
+        ul { margin-bottom: 10px; }
+        li { margin-bottom: 5px; }
+        strong { color: #1f2a24; }
+        table { border-collapse: collapse; width: 100%; margin: 10px 0 15px; font-size: 0.95em; }
+        th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+        th { background: #f6f3ea; color: #1f2a24; }
+        .footer { margin-top: 50px; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+<h1>개인정보처리방침</h1>
+<p>'바둑 한 수' (이하 '앱')는 사용자의 개인정보를 소중히 여기며, '개인정보 보호법' 및 관련 법령을 준수합니다. 본 앱은 AI(KataGo)와의 대국, 기보 저장, 복기 분석을 제공하기 위해 <strong>앱 운영자가 직접 운영하는 서버에 일부 데이터를 저장</strong>합니다. 본 방침은 어떤 정보를 왜 저장하고, 언제 삭제하는지 투명하게 설명합니다.</p>
+
+<h2>1. 수집하는 개인정보의 항목과 목적</h2>
+<p>앱은 <strong>비회원</strong>과 <strong>회원</strong>으로 이용할 수 있으며, 회원 가입은 선택입니다. 각 경우에 서버가 보관하는 정보는 다음과 같습니다.</p>
+<table>
+    <tr><th>구분</th><th>항목</th><th>목적</th></tr>
+    <tr>
+        <td>비회원</td>
+        <td>익명 세션 식별자(서버가 발급하는 무작위 값)</td>
+        <td>기기 식별 없이 AI 대국 기능 제공, 과다 사용 제한</td>
+    </tr>
+    <tr>
+        <td>회원 (가입 시)</td>
+        <td>이메일 주소, 이메일 인증코드(해시), 로그인 시각</td>
+        <td>회원 식별, 이메일 인증 로그인</td>
+    </tr>
+    <tr>
+        <td>회원 (선택)</td>
+        <td>비밀번호(해시만 저장)</td>
+        <td>비밀번호 로그인을 원하는 경우에 한해 설정</td>
+    </tr>
+    <tr>
+        <td>회원 (이용 중 생성)</td>
+        <td>대국 기록(수순, 결과, 승률 그래프, 복기 분석), 기력 프로필(닉네임, 기력, 전적), 로그인 유지 토큰(해시)</td>
+        <td>기보 보관·복기, 기력 관리와 승단, 다른 기기에서 이어서 이용</td>
+    </tr>
+    <tr>
+        <td>자동 수집</td>
+        <td>IP 주소, 앱 버전, 요청 일시</td>
+        <td>서비스 안정 운영, 과다 요청 제한, 오류 대응</td>
+    </tr>
+</table>
+<ul>
+    <li>이름, 연락처, 위치, 연락처 목록, 광고 식별자 등 <strong>그 외의 개인정보는 수집하지 않습니다.</strong></li>
+    <li>비밀번호와 로그인 유지 토큰, 이메일 인증코드는 <strong>원문을 저장하지 않고 해시값만</strong> 보관합니다.</li>
+    <li>비회원의 대국 수순은 서버에 저장되지 않습니다. 기보 보관은 회원에게만 제공됩니다.</li>
+</ul>
+
+<h2>2. 개인정보의 보유 및 이용 기간</h2>
+<ul>
+    <li><strong>회원 정보와 대국 기록:</strong> 회원이 삭제를 요청할 때까지 보관합니다. 개별 대국 기록은 앱 안에서 언제든 삭제할 수 있습니다.</li>
+    <li><strong>이메일 인증코드:</strong> 발급 후 10분이 지나면 효력을 잃으며, 만료된 코드는 주기적으로 삭제됩니다.</li>
+    <li><strong>로그인 유지 토큰:</strong> 최대 1년이며, 로그아웃하면 즉시 폐기됩니다.</li>
+    <li><strong>익명 세션:</strong> 앱을 삭제하면 기기에서 식별자가 사라져 더 이상 사용되지 않습니다. 서버는 사용되지 않는 세션을 주기적으로 정리합니다.</li>
+    <li><strong>접속 기록(IP 주소 등):</strong> 서비스 운영을 위한 서버 로그로 일정 기간 보관 후 삭제됩니다.</li>
+</ul>
+
+<h2>3. 권한 사용 및 목적</h2>
+<p>앱은 꼭 필요한 최소한의 권한만 사용합니다.</p>
+<ul>
+    <li><strong>인터넷 권한:</strong> AI 대국, 계가, 기보 저장, 복기 분석은 모두 앱 운영자의 서버와 통신하여 이루어지므로 인터넷 접근이 필요합니다. 모든 통신은 HTTPS로 암호화됩니다.</li>
+</ul>
+
+<h2>4. 개인정보의 제3자 제공 및 처리 위탁</h2>
+<p>앱은 사용자의 개인정보를 <strong>제3자에게 판매하거나 제공하지 않습니다.</strong> 다만 서비스 운영을 위해 아래 사업자의 인프라를 이용하며, 이 과정에서 데이터가 해당 사업자의 시스템을 거칩니다.</p>
+<ul>
+    <li><strong>Google Cloud Platform:</strong> 서버 호스팅. 서버에 저장되는 모든 데이터는 Google Cloud의 인프라 위에 보관됩니다. (<a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침 확인</a>)</li>
+    <li><strong>Gmail(Google):</strong> 회원 가입·로그인용 이메일 인증코드 발송에 사용됩니다.</li>
+</ul>
+<p>앱은 <strong>광고 SDK, 사용자 행동 분석 도구, 비정상 종료 수집 도구를 사용하지 않습니다.</strong></p>
+
+<h2>5. 개인정보의 안전성 확보 조치</h2>
+<ul>
+    <li>앱과 서버 사이의 모든 통신은 TLS(HTTPS)로 암호화됩니다.</li>
+    <li>비밀번호, 인증코드, 로그인 유지 토큰은 해시값만 저장하며, 원문은 서버에 남지 않습니다.</li>
+    <li>로그인 유지 토큰은 사용할 때마다 새 토큰으로 교체되며, 이미 사용된 토큰이 다시 제출되면 탈취로 판단해 해당 회원의 모든 토큰을 폐기합니다.</li>
+    <li>인증코드 요청과 검증에는 횟수 제한을 두어 무차별 대입을 차단합니다.</li>
+    <li>서버 데이터베이스는 외부에서 직접 접근할 수 없도록 격리되어 있습니다.</li>
+</ul>
+
+<h2>6. 이용자의 권리 및 행사 방법</h2>
+<ul>
+    <li><strong>대국 기록 삭제:</strong> 앱 안에서 개별 대국을 삭제하면 서버에서도 즉시 삭제됩니다.</li>
+    <li><strong>로그아웃:</strong> 앱에서 로그아웃하면 해당 기기의 로그인 유지 토큰이 서버에서 폐기됩니다.</li>
+    <li><strong>회원 탈퇴 및 전체 삭제:</strong> 아래 문의처로 가입 이메일 주소를 적어 요청하시면 이메일, 대국 기록, 기력 프로필, 토큰 등 회원과 관련된 모든 데이터를 삭제해 드립니다. 요청 확인 후 지체 없이 처리합니다.</li>
+    <li><strong>열람·정정:</strong> 본인의 기보와 프로필은 앱에서 직접 확인·수정할 수 있으며, 그 밖의 열람·정정 요청은 문의처로 연락해 주시기 바랍니다.</li>
+</ul>
+
+<h2>7. 아동의 개인정보</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다. 아동의 정보가 수집된 사실을 알게 되면 지체 없이 삭제합니다.</p>
+
+<h2>8. 개인정보처리방침의 변경</h2>
+<p>본 방침은 법령이나 서비스 변경에 따라 개정될 수 있으며, 변경 시 이 페이지를 통해 공지합니다.</p>
+
+<h2>9. 문의처</h2>
+<p>바둑 한 수 이용 중 개인정보 처리와 관련하여 궁금한 점, 삭제 요청, 건의사항이 있으시면 아래로 연락해 주시기 바랍니다.</p>
+<ul>
+    <li><strong>이메일:</strong> shootthemood919@gmail.com</li>
+</ul>
+
+<div class="footer">
+    <p><strong>공고일자:</strong> 2026년 9월 5일</p>
+    <p><strong>시행일자:</strong> 2026년 9월 5일</p>
+</div>
+
+</body>
+</html>
