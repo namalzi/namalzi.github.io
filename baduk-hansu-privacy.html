@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>바둑 한 수 - 개인정보처리방침</title>
+    <title>바둑 한 수 - 개인정보처리방침 / Privacy Policy / プライバシーポリシー</title>
     <style>
-        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
+        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
         h1 { border-bottom: 2px solid #c9a227; padding-bottom: 10px; color: #1f2a24; }
         h2 { margin-top: 30px; color: #1f2a24; font-size: 1.2em; border-left: 4px solid #c9a227; padding-left: 10px; }
         p { margin-bottom: 10px; }
@@ -16,9 +16,27 @@
         th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
         th { background: #f6f3ea; color: #1f2a24; }
         .footer { margin-top: 50px; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
+
+        .lang-nav { position: sticky; top: 0; background: #fff; padding: 12px 0; margin: -20px 0 10px; border-bottom: 1px solid #eee; font-size: 0.95em; z-index: 10; }
+        .lang-nav a { color: #1f2a24; text-decoration: none; margin-right: 6px; padding: 4px 10px; border-radius: 14px; border: 1px solid #ddd; }
+        .lang-nav a:hover { border-color: #c9a227; color: #c9a227; }
+        .lang-nav .current { background: #f6f3ea; border-color: #c9a227; }
+        section.lang { scroll-margin-top: 60px; padding-bottom: 20px; }
+        section.lang + section.lang { margin-top: 60px; border-top: 3px double #c9a227; padding-top: 20px; }
+        .to-top { display: inline-block; margin-top: 15px; font-size: 0.9em; color: #7f8c8d; text-decoration: none; }
+        .to-top:hover { color: #c9a227; }
     </style>
 </head>
 <body>
+
+<nav class="lang-nav" id="top">
+    <a href="#ko">한국어</a>
+    <a href="#en">English</a>
+    <a href="#ja">日本語</a>
+</nav>
+
+<!-- ======================= 한국어 ======================= -->
+<section class="lang" id="ko" lang="ko">
 
 <h1>개인정보처리방침</h1>
 <p>'바둑 한 수' (이하 '앱')는 사용자의 개인정보를 소중히 여기며, '개인정보 보호법' 및 관련 법령을 준수합니다. 본 앱은 AI(KataGo)와의 대국, 기보 저장, 복기 분석을 제공하기 위해 <strong>앱 운영자가 직접 운영하는 서버에 일부 데이터를 저장</strong>합니다. 본 방침은 어떤 정보를 왜 저장하고, 언제 삭제하는지 투명하게 설명합니다.</p>
@@ -126,7 +144,240 @@
     <p><strong>공고일자:</strong> 2026년 9월 9일</p>
     <p><strong>시행일자:</strong> 2026년 9월 9일</p>
     <p><strong>개정 이력:</strong> 2026년 9월 9일 &mdash; 배너 광고(Google AdMob) 도입에 따라 광고 식별자 수집·제공 내용과 광고 ID 권한을 추가했습니다. (최초 공고 2026년 9월 5일)</p>
+    <a class="to-top" href="#top">▲ 맨 위로</a>
 </div>
+
+</section>
+
+<!-- ======================= English ======================= -->
+<section class="lang" id="en" lang="en">
+
+<h1>Privacy Policy</h1>
+<p>'Baduk Hansu' (the "App") values your personal information and complies with the Personal Information Protection Act of Korea and other applicable laws. To provide games against the AI (KataGo), game record storage, and post-game review, the App <strong>stores some data on a server operated directly by the App operator</strong>. This policy explains transparently what information is stored, why, and when it is deleted.</p>
+
+<h2>1. Personal Information Collected and Its Purpose</h2>
+<p>The App can be used as a <strong>guest</strong> or as a <strong>member</strong>, and signing up is optional. The information the server keeps in each case is as follows.</p>
+<table>
+    <tr><th>Category</th><th>Items</th><th>Purpose</th></tr>
+    <tr>
+        <td>Guest</td>
+        <td>Anonymous session identifier (a random value issued by the server)</td>
+        <td>Providing AI games without identifying the device, limiting excessive use</td>
+    </tr>
+    <tr>
+        <td>Member (at sign-up)</td>
+        <td>Email address, email verification code (hashed), login time</td>
+        <td>Identifying members, email verification login</td>
+    </tr>
+    <tr>
+        <td>Member (optional)</td>
+        <td>Password (only the hash is stored)</td>
+        <td>Set only if you choose to log in with a password</td>
+    </tr>
+    <tr>
+        <td>Member (generated during use)</td>
+        <td>Game records (move sequence, result, win-rate graph, review analysis), rank profile (nickname, rank, record), persistent login token (hashed)</td>
+        <td>Storing and reviewing game records, managing rank and promotion, continuing on another device</td>
+    </tr>
+    <tr>
+        <td>Automatically collected</td>
+        <td>IP address, app version, request date and time</td>
+        <td>Stable service operation, limiting excessive requests, handling errors</td>
+    </tr>
+    <tr>
+        <td>Advertising (Google AdMob)</td>
+        <td>Advertising identifier (Android advertising ID), device information (model, OS version, language), approximate location based on IP address (country or region level), ad impression and click records</td>
+        <td>Displaying the banner ad at the bottom of the App screen, limiting repeated exposure of the same ad, measuring ad performance and blocking fraudulent clicks</td>
+    </tr>
+</table>
+<ul>
+    <li>The App <strong>does not collect any other personal information</strong> such as your name, phone number, precise location, or contact list.</li>
+    <li><strong>Advertising-related information, including the advertising identifier, is not stored on the App operator's server.</strong> The Google AdMob SDK collects it on the device and sends it directly to Google; the operator only sees aggregated ad revenue statistics.</li>
+    <li>The advertising identifier is <strong>a resettable value assigned to the device</strong> and is not linked to member information such as your name or email.</li>
+    <li>Passwords, persistent login tokens, and email verification codes are <strong>stored only as hash values, never in plain text</strong>.</li>
+    <li>Guests' move sequences are not stored on the server. Game record storage is provided to members only.</li>
+</ul>
+
+<h2>2. Retention and Use Period of Personal Information</h2>
+<ul>
+    <li><strong>Member information and game records:</strong> Retained until the member requests deletion. Individual game records can be deleted at any time within the App.</li>
+    <li><strong>Email verification codes:</strong> Expire 10 minutes after issuance, and expired codes are deleted periodically.</li>
+    <li><strong>Persistent login tokens:</strong> Valid for up to 1 year and revoked immediately upon logout.</li>
+    <li><strong>Anonymous sessions:</strong> Deleting the App removes the identifier from the device, so it is no longer used. The server periodically cleans up unused sessions.</li>
+    <li><strong>Access logs (IP address, etc.):</strong> Kept as server logs for service operation for a limited period and then deleted.</li>
+    <li><strong>Advertising identifier and ad records:</strong> Subject to Google's retention policy; the App operator does not retain them separately. If you reset or delete your advertising ID in your device settings, the link to the previous value is severed.</li>
+</ul>
+
+<h2>3. Permissions Used and Their Purpose</h2>
+<p>The App uses only the minimum permissions that are strictly necessary.</p>
+<ul>
+    <li><strong>Internet permission:</strong> AI games, scoring, game record storage, and review analysis all communicate with the App operator's server, so internet access is required. All communication is encrypted with HTTPS.</li>
+    <li><strong>Advertising ID permission (com.google.android.gms.permission.AD_ID):</strong> Used by the Google AdMob SDK to read the advertising identifier in order to display the banner ad. This permission is required on Android 13 and later.</li>
+</ul>
+
+<h2>4. Provision to Third Parties and Outsourcing of Processing</h2>
+<p>The App <strong>does not sell or provide your personal information to third parties.</strong> However, it uses the infrastructure of the providers below to operate the service, and data passes through their systems in the process.</p>
+<ul>
+    <li><strong>Google Cloud Platform:</strong> Server hosting. All data stored on the server is kept on Google Cloud infrastructure. (<a href="https://policies.google.com/privacy" target="_blank">See Google's Privacy Policy</a>)</li>
+    <li><strong>Gmail (Google):</strong> Used to send email verification codes for sign-up and login.</li>
+    <li><strong>Google AdMob:</strong> Displays the banner ad at the bottom of the App screen. In the process of requesting and displaying ads, the advertising-related information in the table above is transmitted to Google and Google's advertising partners and used for ad selection and performance measurement. (<a href="https://policies.google.com/technologies/ads" target="_blank">Google Advertising Policies</a>, <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>)</li>
+</ul>
+<p>The App <strong>does not use user behavior analytics tools or crash reporting tools</strong>, and does not sell or provide personal information to third parties for any purpose other than advertising.</p>
+
+<h2>5. Measures to Ensure the Security of Personal Information</h2>
+<ul>
+    <li>All communication between the App and the server is encrypted with TLS (HTTPS).</li>
+    <li>Passwords, verification codes, and persistent login tokens are stored only as hash values; the plain text never remains on the server.</li>
+    <li>The persistent login token is replaced with a new token each time it is used. If an already-used token is submitted again, it is treated as theft and all tokens for that member are revoked.</li>
+    <li>Requests for and verification of verification codes are rate-limited to block brute-force attempts.</li>
+    <li>The server database is isolated so that it cannot be accessed directly from outside.</li>
+</ul>
+
+<h2>6. Your Rights and How to Exercise Them</h2>
+<ul>
+    <li><strong>Deleting game records:</strong> Deleting an individual game within the App deletes it from the server immediately as well.</li>
+    <li><strong>Logging out:</strong> Logging out of the App revokes the persistent login token for that device on the server.</li>
+    <li><strong>Account deletion and full erasure:</strong> Send a request to the contact below including the email address you signed up with, and we will delete all data associated with your membership, including your email, game records, rank profile, and tokens. Requests are processed without delay once confirmed.</li>
+    <li><strong>Access and correction:</strong> You can view and edit your own game records and profile directly in the App. For other access or correction requests, please contact us at the address below.</li>
+    <li><strong>Resetting or deleting the advertising identifier:</strong> On an Android device, go to <em>Settings &gt; Security &amp; privacy &gt; More privacy settings &gt; Ads</em> (or <em>Settings &gt; Google &gt; Ads</em>, depending on the device) to reset or delete your advertising ID. Deleting it stops personalized ads; ads themselves continue to be shown in a non-personalized form.</li>
+</ul>
+
+<h2>7. Children's Personal Information</h2>
+<p>The App is not directed at children under the age of 14 and does not knowingly collect personal information from children. If we learn that a child's information has been collected, we will delete it without delay. The App does not serve personalized ads to children.</p>
+
+<h2>8. Changes to This Privacy Policy</h2>
+<p>This policy may be revised in accordance with changes in law or the service. Any changes will be announced on this page.</p>
+
+<h2>9. Contact</h2>
+<p>If you have any questions, deletion requests, or suggestions regarding the handling of personal information while using Baduk Hansu, please contact us at the address below.</p>
+<ul>
+    <li><strong>Email:</strong> shootthemood919@gmail.com</li>
+</ul>
+
+<div class="footer">
+    <p><strong>Announced:</strong> September 9, 2026</p>
+    <p><strong>Effective:</strong> September 9, 2026</p>
+    <p><strong>Revision history:</strong> September 9, 2026 &mdash; Added the collection and provision of the advertising identifier and the advertising ID permission following the introduction of banner ads (Google AdMob). (Originally announced September 5, 2026)</p>
+    <p>This English version is provided for convenience. In the event of any discrepancy, the Korean version prevails.</p>
+    <a class="to-top" href="#top">▲ Back to top</a>
+</div>
+
+</section>
+
+<!-- ======================= 日本語 ======================= -->
+<section class="lang" id="ja" lang="ja">
+
+<h1>プライバシーポリシー</h1>
+<p>「囲碁一手」（以下「本アプリ」）は、ユーザーの個人情報を大切に扱い、大韓民国の個人情報保護法および関連法令を遵守します。本アプリは、AI（KataGo）との対局、棋譜の保存、検討分析を提供するため、<strong>アプリ運営者が直接運営するサーバーに一部のデータを保存</strong>します。本ポリシーでは、どの情報をなぜ保存し、いつ削除するのかを透明に説明します。</p>
+
+<h2>1. 収集する個人情報の項目と目的</h2>
+<p>本アプリは<strong>ゲスト</strong>または<strong>会員</strong>として利用でき、会員登録は任意です。それぞれの場合にサーバーが保管する情報は次のとおりです。</p>
+<table>
+    <tr><th>区分</th><th>項目</th><th>目的</th></tr>
+    <tr>
+        <td>ゲスト</td>
+        <td>匿名セッション識別子（サーバーが発行するランダムな値）</td>
+        <td>端末を識別せずにAI対局機能を提供、過剰利用の制限</td>
+    </tr>
+    <tr>
+        <td>会員（登録時）</td>
+        <td>メールアドレス、メール認証コード（ハッシュ）、ログイン日時</td>
+        <td>会員の識別、メール認証によるログイン</td>
+    </tr>
+    <tr>
+        <td>会員（任意）</td>
+        <td>パスワード（ハッシュのみ保存）</td>
+        <td>パスワードでのログインを希望する場合に限り設定</td>
+    </tr>
+    <tr>
+        <td>会員（利用中に生成）</td>
+        <td>対局記録（手順、結果、勝率グラフ、検討分析）、棋力プロフィール（ニックネーム、棋力、戦績）、ログイン維持トークン（ハッシュ）</td>
+        <td>棋譜の保管・検討、棋力管理と昇段、他の端末での継続利用</td>
+    </tr>
+    <tr>
+        <td>自動収集</td>
+        <td>IPアドレス、アプリのバージョン、リクエスト日時</td>
+        <td>サービスの安定運営、過剰リクエストの制限、エラー対応</td>
+    </tr>
+    <tr>
+        <td>広告（Google AdMob）</td>
+        <td>広告識別子（Android広告ID）、端末情報（機種、OSバージョン、言語）、IPアドレスに基づくおおよその位置（国・地域レベル）、広告の表示・クリック記録</td>
+        <td>アプリ画面下部のバナー広告の掲載、同じ広告の繰り返し表示の制限、広告効果の測定と不正クリックの遮断</td>
+    </tr>
+</table>
+<ul>
+    <li>氏名、連絡先、正確な位置情報、連絡先リストなど、<strong>これら以外の個人情報は収集しません。</strong></li>
+    <li>広告識別子をはじめとする<strong>広告関連情報は、アプリ運営者のサーバーには保存されません。</strong> Google AdMob SDKが端末上で収集しGoogleへ直接送信するもので、運営者は集計された広告収益の統計のみを確認します。</li>
+    <li>広告識別子は<strong>端末に付与されるリセット可能な値</strong>であり、氏名・メールアドレスなどの会員情報と紐付けることはありません。</li>
+    <li>パスワード、ログイン維持トークン、メール認証コードは<strong>原文を保存せず、ハッシュ値のみ</strong>を保管します。</li>
+    <li>ゲストの対局手順はサーバーに保存されません。棋譜の保管は会員のみに提供されます。</li>
+</ul>
+
+<h2>2. 個人情報の保有および利用期間</h2>
+<ul>
+    <li><strong>会員情報と対局記録：</strong> 会員が削除を要請するまで保管します。個々の対局記録はアプリ内でいつでも削除できます。</li>
+    <li><strong>メール認証コード：</strong> 発行後10分で無効となり、期限切れのコードは定期的に削除されます。</li>
+    <li><strong>ログイン維持トークン：</strong> 最長1年で、ログアウトすると直ちに破棄されます。</li>
+    <li><strong>匿名セッション：</strong> アプリを削除すると端末から識別子が消え、以後使用されません。サーバーは使用されていないセッションを定期的に整理します。</li>
+    <li><strong>アクセス記録（IPアドレスなど）：</strong> サービス運営のためのサーバーログとして一定期間保管した後、削除されます。</li>
+    <li><strong>広告識別子および広告記録：</strong> Googleの保管ポリシーに従い、アプリ運営者は別途保管しません。ユーザーが端末の設定で広告IDをリセットまたは削除すると、以前の値との紐付けは解除されます。</li>
+</ul>
+
+<h2>3. 権限の使用および目的</h2>
+<p>本アプリは、必要最小限の権限のみを使用します。</p>
+<ul>
+    <li><strong>インターネット権限：</strong> AI対局、計算（整地）、棋譜の保存、検討分析はすべてアプリ運営者のサーバーと通信して行われるため、インターネットへのアクセスが必要です。すべての通信はHTTPSで暗号化されます。</li>
+    <li><strong>広告ID権限（com.google.android.gms.permission.AD_ID）：</strong> バナー広告を掲載するために、Google AdMob SDKが広告識別子を読み取る際に使用されます。Android 13以降ではこの権限が必要です。</li>
+</ul>
+
+<h2>4. 個人情報の第三者提供および処理の委託</h2>
+<p>本アプリは、ユーザーの個人情報を<strong>第三者に販売または提供しません。</strong> ただし、サービス運営のために以下の事業者のインフラを利用しており、その過程でデータが当該事業者のシステムを経由します。</p>
+<ul>
+    <li><strong>Google Cloud Platform：</strong> サーバーホスティング。サーバーに保存されるすべてのデータはGoogle Cloudのインフラ上に保管されます。（<a href="https://policies.google.com/privacy" target="_blank">Googleプライバシーポリシーを確認</a>）</li>
+    <li><strong>Gmail（Google）：</strong> 会員登録・ログイン用のメール認証コードの送信に使用されます。</li>
+    <li><strong>Google AdMob：</strong> アプリ画面下部のバナー広告を掲載します。広告のリクエストと表示の過程で、上記の表の広告関連情報がGoogleおよびGoogleの広告パートナーに送信され、広告の選択と効果測定に使用されます。（<a href="https://policies.google.com/technologies/ads" target="_blank">Google広告ポリシー</a>、<a href="https://policies.google.com/privacy" target="_blank">Googleプライバシーポリシー</a>）</li>
+</ul>
+<p>本アプリは<strong>ユーザー行動分析ツールおよびクラッシュ収集ツールを使用しておらず</strong>、広告以外のいかなる目的でも個人情報を第三者に販売または提供しません。</p>
+
+<h2>5. 個人情報の安全性確保措置</h2>
+<ul>
+    <li>アプリとサーバー間のすべての通信はTLS（HTTPS）で暗号化されます。</li>
+    <li>パスワード、認証コード、ログイン維持トークンはハッシュ値のみを保存し、原文はサーバーに残りません。</li>
+    <li>ログイン維持トークンは使用のたびに新しいトークンに置き換えられ、すでに使用されたトークンが再度送信された場合は不正取得と判断し、当該会員のすべてのトークンを破棄します。</li>
+    <li>認証コードのリクエストと検証には回数制限を設け、総当たり攻撃を遮断します。</li>
+    <li>サーバーのデータベースは、外部から直接アクセスできないよう隔離されています。</li>
+</ul>
+
+<h2>6. ユーザーの権利および行使方法</h2>
+<ul>
+    <li><strong>対局記録の削除：</strong> アプリ内で個々の対局を削除すると、サーバーからも直ちに削除されます。</li>
+    <li><strong>ログアウト：</strong> アプリからログアウトすると、当該端末のログイン維持トークンがサーバーから破棄されます。</li>
+    <li><strong>退会およびすべてのデータの削除：</strong> 下記のお問い合わせ先に登録メールアドレスを添えてご依頼いただければ、メールアドレス、対局記録、棋力プロフィール、トークンなど会員に関するすべてのデータを削除します。依頼の確認後、遅滞なく処理します。</li>
+    <li><strong>閲覧・訂正：</strong> ご自身の棋譜とプロフィールはアプリ内で直接確認・修正できます。その他の閲覧・訂正のご依頼はお問い合わせ先までご連絡ください。</li>
+    <li><strong>広告識別子のリセット・削除：</strong> Android端末の<em>設定 &gt; セキュリティとプライバシー &gt; その他のプライバシー設定 &gt; 広告</em>（端末によっては<em>設定 &gt; Google &gt; 広告</em>）で広告IDをリセットまたは削除できます。削除するとパーソナライズ広告は停止しますが、広告自体はパーソナライズされない形で引き続き表示されます。</li>
+</ul>
+
+<h2>7. 児童の個人情報</h2>
+<p>本アプリは14歳未満の児童を対象としておらず、児童の個人情報を意図的に収集することはありません。児童の情報が収集された事実を知った場合は、遅滞なく削除します。本アプリは児童を対象としたパーソナライズ広告を提供しません。</p>
+
+<h2>8. プライバシーポリシーの変更</h2>
+<p>本ポリシーは、法令やサービスの変更に応じて改定されることがあり、変更時は本ページを通じてお知らせします。</p>
+
+<h2>9. お問い合わせ先</h2>
+<p>囲碁一手のご利用中に、個人情報の取り扱いに関するご質問、削除のご依頼、ご意見がございましたら、下記までご連絡ください。</p>
+<ul>
+    <li><strong>メール：</strong> shootthemood919@gmail.com</li>
+</ul>
+
+<div class="footer">
+    <p><strong>公告日：</strong> 2026年9月9日</p>
+    <p><strong>施行日：</strong> 2026年9月9日</p>
+    <p><strong>改定履歴：</strong> 2026年9月9日 &mdash; バナー広告（Google AdMob）の導入に伴い、広告識別子の収集・提供に関する内容と広告ID権限を追加しました。（初回公告 2026年9月5日）</p>
+    <p>この日本語版は参考のために提供するものです。内容に相違がある場合は、韓国語版が優先されます。</p>
+    <a class="to-top" href="#top">▲ ページの先頭へ</a>
+</div>
+
+</section>
 
 </body>
 </html>

@@ -11,7 +11,12 @@
             --bg-color: #faf8f3;
             --text-color: #2c3e50;
         }
-        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; margin: 0; padding: 0; color: var(--text-color); background-color: var(--bg-color); line-height: 1.6; }
+        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 0; color: var(--text-color); background-color: var(--bg-color); line-height: 1.6; }
+
+        .lang-nav { background: var(--secondary-color); text-align: center; padding: 10px; font-size: 0.9rem; }
+        .lang-nav a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 8px; padding: 4px 12px; border-radius: 14px; border: 1px solid transparent; }
+        .lang-nav a:hover { color: #fff; }
+        .lang-nav a.current { color: #fff; border-color: var(--primary-color); }
 
         header {
             background: linear-gradient(135deg, var(--secondary-color) 0%, #34443b 100%);
@@ -67,10 +72,22 @@
         footer { margin-top: 100px; padding: 40px; text-align: center; font-size: 0.9rem; color: #95a5a6; background: #f1f3f5; }
         footer a { color: #7f8c8d; text-decoration: none; margin: 0 10px; }
         footer a:hover { color: var(--primary-color); }
+
+        /* 언어 섹션: 스크립트가 켜지면 선택한 언어만 표시, 꺼져 있으면 모두 표시 */
+        .js section.lang { display: none; }
+        .js section.lang.active { display: block; }
     </style>
 </head>
 <body>
 
+<nav class="lang-nav">
+    <a href="#ko" data-lang="ko">한국어</a>
+    <a href="#en" data-lang="en">English</a>
+    <a href="#ja" data-lang="ja">日本語</a>
+</nav>
+
+<!-- ======================= 한국어 ======================= -->
+<section class="lang" id="ko" lang="ko">
 <header>
     <h1>바둑 한 수</h1>
     <div class="subtitle">18급부터 9단까지, 내 기력에 맞춰 두는 KataGo 바둑 사범.</div>
@@ -117,10 +134,148 @@
 <footer>
     <p>&copy; 2026 바둑 한 수. All rights reserved.</p>
     <p>
-        <a href="baduk-hansu-privacy.html">개인정보처리방침</a> |
+        <a href="baduk-hansu-privacy.html#ko">개인정보처리방침</a> |
         <a href="mailto:shootthemood919@gmail.com">문의하기</a>
     </p>
 </footer>
+</section>
+
+<!-- ======================= English ======================= -->
+<section class="lang" id="en" lang="en">
+<header>
+    <h1>Baduk Hansu</h1>
+    <div class="subtitle">From 18 kyu to 9 dan, a KataGo Go coach that plays at your level.</div>
+</header>
+
+<div class="container">
+    <div class="cta-section">
+        <a href="https://play.google.com/store/apps/details?id=io.github.namalzi.matchkatagoai" class="download-btn">Play Your First Game Now</a>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3><span class="emoji">🎯</span> An Opponent at Your Level</h3>
+            <p>KataGo, the world's strongest Go AI, is tuned into <strong>27 levels from 18 kyu to 9 dan</strong>. Play a game anytime against an opponent that is neither too strong nor too weak, but just right.</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">📈</span> Win-Rate Graph and Review</h3>
+            <p>After each game, the AI calculates the win rate move by move and shows you <strong>exactly where the game turned</strong>. Check your mistakes alongside the AI's recommended moves and build your strength.</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">🏆</span> Rank Profile and Promotion</h3>
+            <p>Beat a higher-ranked opponent in a matched game and you are <strong>promoted one rank</strong>. Your record and rank are stored on the server, so they carry over even when you change phones.</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">☁️</span> Game Records Kept on the Server</h3>
+            <p>Sign up with nothing more than email verification and <strong>every game you play is saved on the server</strong>. Reinstall the app or log in from another device, and your game records are still there.</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">⚖️</span> Accurate Scoring</h3>
+            <p>When a game ends, the AI judges life and death and scores it automatically under <strong>Korean rules (territory + captures + komi)</strong>. You know right away who won and by how many points.</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">🔒</span> Only the Minimum Data</h3>
+            <p>No analytics SDKs, and the only ad is a single banner at the bottom of the screen. All you need to sign up is <strong>one email address</strong>, and guests can play the AI right away without signing up at all.</p>
+        </div>
+    </div>
+
+    <div class="summary-box">
+        <h2>Why Baduk Hansu?</h2>
+        <p>Playing Go alone does not make you stronger. Baduk Hansu brings together <strong>an opponent matched to your level, a review that pinpoints where the game turned, and promotions you have to earn by winning</strong>, all in one app. One move today, one move tomorrow. Keep playing, and one day you will find yourself standing a rank higher.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Baduk Hansu. All rights reserved.</p>
+    <p>
+        <a href="baduk-hansu-privacy.html#en">Privacy Policy</a> |
+        <a href="mailto:shootthemood919@gmail.com">Contact Us</a>
+    </p>
+</footer>
+</section>
+
+<!-- ======================= 日本語 ======================= -->
+<section class="lang" id="ja" lang="ja">
+<header>
+    <h1>囲碁一手</h1>
+    <div class="subtitle">18級から9段まで、あなたの棋力に合わせて打つKataGoの囲碁師範。</div>
+</header>
+
+<div class="container">
+    <div class="cta-section">
+        <a href="https://play.google.com/store/apps/details?id=io.github.namalzi.matchkatagoai" class="download-btn">今すぐ一手打つ</a>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3><span class="emoji">🎯</span> 棋力に合った相手</h3>
+            <p>世界最強のAI「KataGo」を<strong>18級から9段まで27段階</strong>に調整しました。強すぎず、弱すぎず、ちょうどよい相手といつでも一局打てます。</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">📈</span> 勝率グラフと検討</h3>
+            <p>終局後、AIが一手ごとに勝率を計算し、<strong>どこで形勢が傾いたのか</strong>を示します。ミスした箇所とAIの推奨手を合わせて確認し、実力を伸ばしましょう。</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">🏆</span> 棋力プロフィールと昇段</h3>
+            <p>マッチ対局で自分より上の相手に勝つと<strong>一段階昇段</strong>します。戦績と棋力はサーバーに記録されるので、スマホを変えてもそのまま引き継げます。</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">☁️</span> サーバーに残る棋譜</h3>
+            <p>メール認証だけで登録すれば、打った<strong>すべての対局がサーバーに保存</strong>されます。アプリを再インストールしても、別の端末でログインしても、棋譜は消えません。</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">⚖️</span> 正確な計算（整地）</h3>
+            <p>終局するとAIが死活を判定し、<strong>韓国ルール（地＋ハマ＋コミ）</strong>で自動的に計算します。誰が何目勝ったのか、すぐにわかります。</p>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">🔒</span> 必要最小限の情報だけ</h3>
+            <p>分析SDKは使わず、広告は画面最下部のバナー1つだけです。会員登録に必要なのは<strong>メールアドレス1つ</strong>だけで、登録せずにゲストのままAIとすぐに一局打つこともできます。</p>
+        </div>
+    </div>
+
+    <div class="summary-box">
+        <h2>なぜ囲碁一手なのか</h2>
+        <p>一人で打つ囲碁は上達しません。囲碁一手は<strong>自分のレベルに合った相手、形勢が傾いた箇所を指摘する検討、勝たなければ上がれない昇段</strong>を一つのアプリにまとめました。今日一手、明日一手。打ち続けるうちに、いつの間にか一段上に立っている自分に出会えます。</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 囲碁一手. All rights reserved.</p>
+    <p>
+        <a href="baduk-hansu-privacy.html#ja">プライバシーポリシー</a> |
+        <a href="mailto:shootthemood919@gmail.com">お問い合わせ</a>
+    </p>
+</footer>
+</section>
+
+<script>
+(function () {
+    var langs = ['ko', 'en', 'ja'];
+    var titles = {
+        ko: '바둑 한 수 - KataGo와 두는 나만의 바둑 사범',
+        en: 'Baduk Hansu - Your Personal Go Coach Powered by KataGo',
+        ja: '囲碁一手 - KataGoと打つ、自分だけの囲碁の師範'
+    };
+    document.documentElement.classList.add('js');
+
+    function show() {
+        var lang = location.hash.replace('#', '');
+        if (langs.indexOf(lang) === -1) lang = 'ko';
+        langs.forEach(function (l) {
+            document.getElementById(l).classList.toggle('active', l === lang);
+        });
+        document.querySelectorAll('.lang-nav a').forEach(function (a) {
+            a.classList.toggle('current', a.getAttribute('data-lang') === lang);
+        });
+        document.documentElement.lang = lang;
+        document.title = titles[lang];
+        window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('hashchange', show);
+    show();
+})();
+</script>
 
 </body>
 </html>
