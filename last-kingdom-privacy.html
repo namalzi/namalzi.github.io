@@ -42,7 +42,7 @@
 <p>앱은 <strong>사용자의 이름, 이메일, 연락처, 위치, 기기 식별자, 광고 식별자 등 어떠한 개인정보도 수집하지 않습니다.</strong></p>
 <ul>
     <li>회원 가입과 로그인 절차가 없습니다.</li>
-    <li>앱은 인터넷 권한을 사용하지 않으며, 앱 운영자의 서버나 그 밖의 어떤 서버와도 통신하지 않습니다.</li>
+    <li>앱에는 네트워크 기능이 없으며(Android 버전은 인터넷 권한도 선언하지 않습니다), 앱 운영자의 서버나 그 밖의 어떤 서버와도 통신하지 않습니다.</li>
     <li>광고, 인앱 결제가 없습니다.</li>
 </ul>
 
@@ -50,13 +50,16 @@
 <p>게임을 이어서 할 수 있도록 아래 정보가 <strong>사용자의 기기 안, 앱 전용 저장 공간에만</strong> 저장됩니다. 이 정보는 개인을 식별할 수 없으며, 앱 운영자에게 전송되지 않습니다.</p>
 <ul>
     <li><strong>진행 중인 전투의 저장본:</strong> 금화, 생명, 웨이브 번호, 세운 타워의 종류·위치·레벨, 길 위에 있는 적의 상태. 전투가 끝나거나 새 전투를 시작하면 지워집니다.</li>
-    <li><strong>게임 설정:</strong> 효과음·배경음악 켜기/끄기.</li>
+    <li><strong>전투 기록:</strong> 끝난 전투마다 맵, 시작·종료 시각, 결과(승리/패배), 도달한 웨이브, 남은 생명. 최근 200건까지만 남기며, 가장 좋은 기록은 계속 보관합니다.</li>
+    <li><strong>원정 진행:</strong> 깬 맵의 목록(다음 맵과 새 타워·강화 단계를 여는 데 씁니다).</li>
+    <li><strong>게임 설정:</strong> 효과음·배경음악 켜기/끄기와 소리 크기.</li>
 </ul>
 <p>이 정보는 앱을 삭제하면 함께 삭제됩니다.</p>
 <p>기기에서 Android의 백업 기능(Google 계정 백업)을 켜 두었다면, 위 정보가 <strong>사용자 본인의 Google 계정 백업</strong>에 포함되어 기기를 바꿀 때 복원될 수 있습니다. 이 백업은 Android 운영체제와 Google이 사용자의 계정 설정에 따라 처리하는 것으로, 앱 운영자는 그 내용에 접근할 수 없습니다. 백업은 기기의 <em>설정 &gt; 계정 및 백업</em>(기기에 따라 <em>설정 &gt; Google &gt; 백업</em>)에서 끌 수 있습니다.</p>
+<p>iPhone·iPad에서 iCloud 백업을 켜 두었다면, 위 정보가 <strong>사용자 본인의 iCloud 백업</strong>에 포함될 수 있습니다. 이 백업은 Apple이 사용자의 계정 설정에 따라 처리하며, 앱 운영자는 그 내용에 접근할 수 없습니다.</p>
 
 <h2>3. 권한 사용 및 목적</h2>
-<p>앱은 카메라, 마이크, 저장소, 위치, 연락처, 인터넷 등 <strong>어떠한 권한도 요청하지 않습니다.</strong></p>
+<p>앱은 Android와 iOS 모두에서 카메라, 마이크, 저장소, 위치, 연락처, 인터넷 등 <strong>어떠한 권한도 요청하지 않습니다.</strong></p>
 
 <h2>4. 개인정보의 제3자 제공 및 처리 위탁</h2>
 <p>앱은 수집하는 개인정보가 없으므로 제3자에게 제공하거나 처리를 위탁하는 경우가 없습니다. 앱에는 <strong>광고 SDK, 사용자 행동 분석 도구, 비정상 종료 수집 도구가 포함되어 있지 않으며</strong>, 외부 서버와 통신하지 않습니다.</p>
@@ -64,15 +67,15 @@
 <h2>5. 이용자의 권리 및 행사 방법</h2>
 <p>앱 운영자는 사용자의 정보를 보관하지 않으므로 별도의 열람·정정·삭제 절차가 필요하지 않습니다. 기기에 저장된 게임 데이터는 사용자가 직접 지울 수 있습니다.</p>
 <ul>
-    <li><strong>앱 삭제:</strong> 앱을 삭제하면 저장본과 설정이 모두 삭제됩니다.</li>
-    <li><strong>데이터만 삭제:</strong> 기기의 <em>설정 &gt; 애플리케이션 &gt; 마지막 왕국: 배수의 진 &gt; 저장공간 &gt; 데이터 삭제</em>.</li>
+    <li><strong>앱 삭제:</strong> 앱을 삭제하면 저장본, 기록, 진행, 설정이 모두 삭제됩니다(Android·iOS 공통).</li>
+    <li><strong>데이터만 삭제(Android):</strong> 기기의 <em>설정 &gt; 애플리케이션 &gt; 마지막 왕국: 배수의 진 &gt; 저장공간 &gt; 데이터 삭제</em>.</li>
 </ul>
 
 <h2>6. 아동의 개인정보</h2>
 <p>앱은 연령과 관계없이 어떠한 개인정보도 수집하지 않으며, 아동의 개인정보 또한 수집하지 않습니다.</p>
 
 <h2>7. 개인정보처리방침의 변경</h2>
-<p>본 방침은 법령이나 앱의 기능 변경(예: 소리, 기록 저장 등의 추가)에 따라 개정될 수 있으며, 변경 시 이 페이지를 통해 공지합니다. 앱이 정보를 수집하게 되는 변경이 있을 경우에는 그 내용을 본 방침에 먼저 반영합니다.</p>
+<p>본 방침은 법령이나 앱의 기능 변경(예: 온라인 기능의 추가)에 따라 개정될 수 있으며, 변경 시 이 페이지를 통해 공지합니다. 앱이 정보를 수집하게 되는 변경이 있을 경우에는 그 내용을 본 방침에 먼저 반영합니다.</p>
 
 <h2>8. 문의처</h2>
 <p>앱 이용 중 개인정보 처리와 관련하여 궁금한 점이나 건의사항이 있으시면 아래로 연락해 주시기 바랍니다.</p>
@@ -81,8 +84,8 @@
 </ul>
 
 <div class="footer">
-    <p><strong>공고일자:</strong> 2026년 10월 4일</p>
-    <p><strong>시행일자:</strong> 2026년 10월 4일</p>
+    <p><strong>공고일자:</strong> 2026년 10월 18일</p>
+    <p><strong>시행일자:</strong> 2026년 10월 18일</p>
     <a class="to-top" href="#top">▲ 맨 위로</a>
 </div>
 
@@ -98,7 +101,7 @@
 <p>The App <strong>does not collect any personal information, including your name, email address, contacts, location, device identifiers, or advertising ID.</strong></p>
 <ul>
     <li>There is no sign-up or login.</li>
-    <li>The App does not use the internet permission and does not communicate with the operator's servers or any other server.</li>
+    <li>The App has no network features (the Android version does not even declare the internet permission) and does not communicate with the operator's servers or any other server.</li>
     <li>There are no ads and no in-app purchases.</li>
 </ul>
 
@@ -106,13 +109,16 @@
 <p>So that you can continue a game, the following information is stored <strong>only on your device, in the App's private storage</strong>. It cannot identify you and is never sent to the operator.</p>
 <ul>
     <li><strong>The saved battle in progress:</strong> gold, lives, wave number, the kind, position and level of the towers you built, and the state of enemies on the road. It is removed when the battle ends or when you start a new battle.</li>
-    <li><strong>Game settings:</strong> sound effects and music on/off.</li>
+    <li><strong>Battle records:</strong> for each finished battle, the map, start and end time, result (victory/defeat), the wave reached, and lives left. Only the latest 200 are kept, and your best record is always kept.</li>
+    <li><strong>Campaign progress:</strong> the list of maps you have cleared (used to open the next maps and new towers and upgrade levels).</li>
+    <li><strong>Game settings:</strong> sound effects and music on/off, and their volume.</li>
 </ul>
 <p>This information is deleted when you uninstall the App.</p>
 <p>If you have turned on Android's backup feature (Google account backup) on your device, the information above may be included in <strong>your own Google account backup</strong> and restored when you change devices. That backup is handled by the Android operating system and Google according to your account settings, and the operator has no access to it. You can turn backup off under <em>Settings &gt; Accounts and backup</em> (on some devices, <em>Settings &gt; Google &gt; Backup</em>).</p>
+<p>On iPhone and iPad, if iCloud Backup is turned on, the information above may be included in <strong>your own iCloud backup</strong>. That backup is handled by Apple according to your account settings, and the operator has no access to it.</p>
 
 <h2>3. Permissions</h2>
-<p>The App <strong>does not request any permissions</strong>, including camera, microphone, storage, location, contacts, or internet access.</p>
+<p>On both Android and iOS, the App <strong>does not request any permissions</strong>, including camera, microphone, storage, location, contacts, or internet access.</p>
 
 <h2>4. Sharing with Third Parties</h2>
 <p>Because the App collects no personal information, nothing is provided to or processed by third parties. The App <strong>contains no advertising SDKs, no analytics tools, and no crash reporting tools</strong>, and it does not communicate with any external server.</p>
@@ -120,15 +126,15 @@
 <h2>5. Your Rights</h2>
 <p>The operator holds none of your information, so no separate procedure for access, correction or deletion is needed. You can delete the game data stored on your device yourself.</p>
 <ul>
-    <li><strong>Uninstall the App:</strong> the saved battle and settings are deleted with it.</li>
-    <li><strong>Delete the data only:</strong> on your device, <em>Settings &gt; Apps &gt; Last Kingdom: No Retreat &gt; Storage &gt; Clear data</em>.</li>
+    <li><strong>Uninstall the App:</strong> the saved battle, records, progress and settings are all deleted with it (Android and iOS).</li>
+    <li><strong>Delete the data only (Android):</strong> on your device, <em>Settings &gt; Apps &gt; Last Kingdom: No Retreat &gt; Storage &gt; Clear data</em>.</li>
 </ul>
 
 <h2>6. Children's Privacy</h2>
 <p>The App does not collect personal information from anyone, regardless of age, and therefore does not collect personal information from children.</p>
 
 <h2>7. Changes to This Policy</h2>
-<p>This policy may be revised to reflect changes in the law or in the App's features (for example, the addition of sound or record keeping). Changes will be announced on this page. If a change would cause the App to collect information, this policy will be updated first.</p>
+<p>This policy may be revised to reflect changes in the law or in the App's features (for example, the addition of online features). Changes will be announced on this page. If a change would cause the App to collect information, this policy will be updated first.</p>
 
 <h2>8. Contact</h2>
 <p>If you have questions or suggestions about how the App handles personal information, please contact us.</p>
@@ -137,8 +143,8 @@
 </ul>
 
 <div class="footer">
-    <p><strong>Published:</strong> October 4, 2026</p>
-    <p><strong>Effective:</strong> October 4, 2026</p>
+    <p><strong>Published:</strong> October 18, 2026</p>
+    <p><strong>Effective:</strong> October 18, 2026</p>
     <p>This English version is provided for convenience. In the event of any discrepancy, the Korean version prevails.</p>
     <a class="to-top" href="#top">▲ Back to top</a>
 </div>
@@ -155,7 +161,7 @@
 <p>本アプリは、<strong>氏名、メールアドレス、連絡先、位置情報、端末識別子、広告IDなど、いかなる個人情報も収集しません。</strong></p>
 <ul>
     <li>会員登録およびログインの手続きはありません。</li>
-    <li>本アプリはインターネット権限を使用せず、運営者のサーバーやその他いかなるサーバーとも通信しません。</li>
+    <li>本アプリにはネットワーク機能がなく（Android版はインターネット権限も宣言していません）、運営者のサーバーやその他いかなるサーバーとも通信しません。</li>
     <li>広告およびアプリ内課金はありません。</li>
 </ul>
 
@@ -163,13 +169,16 @@
 <p>ゲームを続きから遊べるよう、以下の情報が<strong>ユーザーの端末内、本アプリ専用の保存領域にのみ</strong>保存されます。これらの情報で個人を識別することはできず、運営者に送信されることもありません。</p>
 <ul>
     <li><strong>進行中の戦闘のセーブデータ：</strong>金貨、命、ウェーブ番号、建てた塔の種類・位置・レベル、道の上にいる敵の状態。戦闘が終わるか、新しい戦闘を始めると削除されます。</li>
-    <li><strong>ゲーム設定：</strong>効果音・音楽のオン/オフ。</li>
+    <li><strong>戦闘の記録：</strong>終わった戦闘ごとのマップ、開始・終了時刻、結果（勝利/敗北）、到達したウェーブ、残りの命。最新の200件までを残し、最も良い記録は常に保管します。</li>
+    <li><strong>遠征の進行：</strong>クリアしたマップの一覧（次のマップや新しい塔・強化レベルを開くために使います）。</li>
+    <li><strong>ゲーム設定：</strong>効果音・音楽のオン/オフと音量。</li>
 </ul>
 <p>これらの情報は、本アプリを削除すると一緒に削除されます。</p>
 <p>端末でAndroidのバックアップ機能（Googleアカウントへのバックアップ）を有効にしている場合、上記の情報が<strong>ユーザーご自身のGoogleアカウントのバックアップ</strong>に含まれ、機種変更の際に復元されることがあります。このバックアップは、AndroidおよびGoogleがユーザーのアカウント設定に従って処理するものであり、運営者はその内容にアクセスできません。バックアップは端末の<em>設定 &gt; アカウントとバックアップ</em>（端末によっては<em>設定 &gt; Google &gt; バックアップ</em>）で無効にできます。</p>
+<p>iPhone・iPadでiCloudバックアップを有効にしている場合、上記の情報が<strong>ユーザーご自身のiCloudバックアップ</strong>に含まれることがあります。このバックアップはAppleがユーザーのアカウント設定に従って処理するものであり、運営者はその内容にアクセスできません。</p>
 
 <h2>3. 権限の使用と目的</h2>
-<p>本アプリは、カメラ、マイク、ストレージ、位置情報、連絡先、インターネットなど、<strong>いかなる権限も要求しません。</strong></p>
+<p>本アプリは、AndroidとiOSのいずれでも、カメラ、マイク、ストレージ、位置情報、連絡先、インターネットなど、<strong>いかなる権限も要求しません。</strong></p>
 
 <h2>4. 個人情報の第三者提供および処理の委託</h2>
 <p>本アプリは個人情報を収集しないため、第三者への提供や処理の委託は発生しません。本アプリには<strong>広告SDK、ユーザー行動の分析ツール、クラッシュ収集ツールは含まれておらず</strong>、外部のサーバーと通信しません。</p>
@@ -177,15 +186,15 @@
 <h2>5. ユーザーの権利と行使方法</h2>
 <p>運営者はユーザーの情報を保管していないため、閲覧・訂正・削除のための特別な手続きは必要ありません。端末に保存されたゲームデータは、ユーザーご自身で削除できます。</p>
 <ul>
-    <li><strong>アプリの削除：</strong>アプリを削除すると、セーブデータと設定はすべて削除されます。</li>
-    <li><strong>データのみ削除：</strong>端末の<em>設定 &gt; アプリ &gt; 最後の王国: 背水の陣 &gt; ストレージ &gt; データを消去</em>。</li>
+    <li><strong>アプリの削除：</strong>アプリを削除すると、セーブデータ、記録、進行、設定はすべて削除されます（Android・iOS共通）。</li>
+    <li><strong>データのみ削除（Android）：</strong>端末の<em>設定 &gt; アプリ &gt; 最後の王国: 背水の陣 &gt; ストレージ &gt; データを消去</em>。</li>
 </ul>
 
 <h2>6. 児童の個人情報</h2>
 <p>本アプリは年齢にかかわらずいかなる個人情報も収集しないため、児童の個人情報も収集しません。</p>
 
 <h2>7. プライバシーポリシーの変更</h2>
-<p>本ポリシーは、法令や本アプリの機能の変更（例：サウンドや記録保存の追加）に伴い改定されることがあり、変更の際はこのページでお知らせします。本アプリが情報を収集することになる変更がある場合は、その内容を先に本ポリシーへ反映します。</p>
+<p>本ポリシーは、法令や本アプリの機能の変更（例：オンライン機能の追加）に伴い改定されることがあり、変更の際はこのページでお知らせします。本アプリが情報を収集することになる変更がある場合は、その内容を先に本ポリシーへ反映します。</p>
 
 <h2>8. お問い合わせ</h2>
 <p>本アプリの個人情報の取り扱いについてご不明な点やご意見がありましたら、下記までご連絡ください。</p>
@@ -194,8 +203,8 @@
 </ul>
 
 <div class="footer">
-    <p><strong>公告日：</strong> 2026年10月4日</p>
-    <p><strong>施行日：</strong> 2026年10月4日</p>
+    <p><strong>公告日：</strong> 2026年10月18日</p>
+    <p><strong>施行日：</strong> 2026年10月18日</p>
     <p>この日本語版は参考のために提供するものです。内容に相違がある場合は、韓国語版が優先されます。</p>
     <a class="to-top" href="#top">▲ ページの先頭へ</a>
 </div>
